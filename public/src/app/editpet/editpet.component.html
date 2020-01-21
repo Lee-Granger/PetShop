@@ -1,0 +1,17 @@
+<h3>Edit this Pet</h3>
+<a [routerLink]="['/pets']">Home</a>
+<div class="wrapper">
+  <form (submit)="updatePet()">
+  <p>Pet Name: </p>
+  <input type="text" name="petToEdit.name" [(ngModel)]="petToEdit.name">
+  <p>Pet Type:</p>
+  <input type="text" name="petToEdit.type" [(ngModel)]="petToEdit.type">
+  <p>Description:</p>
+  <input type="text" name="petToEdit.description" [(ngModel)]="petToEdit.description">
+  <p>Skills (optional):</p>
+  <p>Skill 1: <input type="text" name="petToEdit.skill1" [(ngModel)]="petToEdit.skill1"></p>
+  <p>Skill 2: <input type="text" name="petToEdit.skill2" [(ngModel)]="petToEdit.skill2"></p>
+  <p>Skill 3: <input type="text" name="petToEdit.skill3" [(ngModel)]="petToEdit.skill3"></p>
+  <input type="submit" value="Edit Pet"><button [routerLink]="['/pets']">Cancel</button>
+</form>
+</div>

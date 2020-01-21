@@ -1,0 +1,12 @@
+td {
+    width: 33%;
+    border: 2px solid black;
+}
+
+table {
+    width: 75%;
+    margin: 0 auto;
+    margin-top: 20px;
+    border: 2px solid black;
+
+}

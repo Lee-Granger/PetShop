@@ -1,0 +1,18 @@
+<h2>Know of a pet needing a home?</h2>
+<p *ngFor="let e of errors">{{ e }}</p>
+<div class="wrapper">
+  <!-- {{ newPet | json}} -->
+  <form (submit)="AddNewPet()">
+    <p>Pet name:</p>
+    <input type="text" name="newPet.name" [(ngModel)]="newPet.name">
+    <p>Pet type:</p>
+    <input type="text" name="newPet.type" [(ngModel)]="newPet.type">
+    <p>Description: </p>
+    <input type="text" name="newPet.description" [(ngModel)]="newPet.description">
+    <p>Skills:</p>
+    <p>Skill 1: <input type="text" name="newPet.skill1" [(ngModel)]="newPet.skill1"></p>
+    <p>Skill 2: <input type="text" name="newPet.skill2" [(ngModel)]="newPet.skill2"></p>
+    <p>Skill 3: <input type="text" name="newPet.skill3" [(ngModel)]="newPet.skill3"></p>
+    <input type="submit" value="Add pet"> <button [routerLink]="['/pets']">Cancel</button>
+  </form>
+</div>

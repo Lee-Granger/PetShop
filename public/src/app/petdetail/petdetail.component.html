@@ -1,0 +1,12 @@
+<h2>Details about {{ petDisplay.name }} </h2><a [routerLink]="['/pets']">Home</a>
+
+<br>
+<p>Pet Type: {{ petDisplay.type }}</p>
+<p>Description: {{ petDisplay.description }}</p>
+<p>Skills:</p>
+<p>{{ petDisplay.skill1 }}</p>
+<p>{{ petDisplay.skill2 }}</p>
+<p>{{ petDisplay.skill3 }}</p>
+
+<!-- <button>Like</button> -->
+<button (click)="deleteThis()">Adopt this pet!!</button>
